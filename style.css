@@ -1,0 +1,71 @@
+body {
+    background-image: url('https://static.vecteezy.com/system/resources/previews/000/432/791/original/sticker-design-for-word-math-vector.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&family=PT+Sans&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-family: Josefin+sans-serif;
+    font-size: 62.5%;
+}
+.container{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+padding: 15px;
+}
+.calculator{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    font-size: 2rem;
+    border: 1px solid rgb(24, 23, 23);
+}
+.calculator-display{
+padding: 25px 15px;
+background-color:aquamarine;
+width: 100%;
+text-align: right;
+border: 1px solid grey;
+overflow-x: auto;
+}
+.calculator-keypad{
+display: flex;
+width: 100%;
+}
+
+.keypad-numbers{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.keypad-button{
+    width: 25%;
+    padding: 15px 0;
+    text-align: center;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid grey;
+}
+.keypad-button:hover{
+    filter: brightness(80%);
+    transition:filter.25s;
+}
+.keypad-button.yellow{
+    background-color: rgb(196, 200, 236);
+}
+.keypad-button.large {
+width: 50%;
+}
+.keypad-button.dark{
+    background-color: bisque;
+}
